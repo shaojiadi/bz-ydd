@@ -1,0 +1,58 @@
+<view>
+  <view class='slider'>
+    <swiper autoplay indicator-dots='4' indicator-active-color='#00a1ed'> 
+      <swiper-item wx:for='{{navlists}}' wx:key='index'>
+        <image src='{{item.img_url}}' lazy-load mode='aspectFill'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!--会员权益-->
+  <view class='czfw'>
+    <text class='serve'>会员权益</text>
+  </view>
+  <view class='index-nav'>
+    <view class='nav-item border'>
+      <image src='{{bind[0].img_url}}' class='bind'></image>
+    </view>
+    <view class='nav-item border'>
+      <image src='{{bind[1].img_url}}' class='bind2'></image>
+    </view>
+    <view class='nav-item border'>
+      <image src='{{bind[2].img_url}}' class='bind2'></image>
+    </view>
+     <view class='nav-item border'>
+      <image src='{{bind[3].img_url}}' class='bind'></image>
+    </view>
+    <view class='nav-item border'>
+      <image src='{{bind[4].img_url}}' class='bind'></image>
+    </view>
+    <view class='nav-item border'>
+      <image src='{{bind[5].img_url}}' class='bind2'></image>
+    </view>
+    <view class='nav-item border'>
+      <image src='{{bind[6].img_url}}' class='bind2'></image>
+    </view>
+     <view class='nav-item border'>
+      <image src='{{bind[7].img_url}}' class='bind'></image>
+    </view>
+  </view>
+  <view>
+    <view class='footnav'>
+      <image src='/pages/image/logo.png' class='logo'></image>
+      <text class='texts'>分享Mercedes me 车主俱乐部</text>
+    </view>
+    <view class='footnav'>
+      <navigator class='text gitor'>常见问题</navigator>
+      <text class='texts gitors' decode='true'>联系我们:&nbsp;</text>
+      <navigator class='text'>400-818-1188</navigator>
+    </view>
+  </view>
+  <view class='fot'>
+    <text class='footer'>隐私条款 | 京ICP备09046804号 | 法律声明</text>
+    <text class='footer footest'>@2018 北京梅赛德斯-奔驰销售服务有限公司 版权所有</text>
+  </view>
+  <view class='bottom'>
+    <navigator class='btn'>登录</navigator>
+    <navigator class='btn'>注册</navigator>
+  </view>
+</view>
